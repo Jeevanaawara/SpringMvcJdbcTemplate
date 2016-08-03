@@ -1,0 +1,101 @@
+.error {
+	color: red;
+	font-weight: bold;
+}
+
+/* Shamsi */
+
+section.Login {
+	background: #fefefe none repeat scroll 0 0;
+	height: 650px;
+}
+
+section.Login_2 {
+	background: #fefefe none repeat scroll 0 0;
+	height: 650px;
+}
+section.Login_3 {
+	background: #fefefe none repeat scroll 0 0;
+	height: 380px;
+}
+
+
+.loginbox {
+	background: #EBA233 none repeat scroll 0 0;
+	clear: both;
+	float: none;
+	max-width: 360px;
+	overflow: auto;
+	padding: 25px;
+	margin-top: 15%;
+}
+
+.loginboxStudent {
+	background: #EBA233 none repeat scroll 0 0;
+	clear: both;
+	float: none;
+	max-width: 550px;
+	overflow: auto;
+	padding: 25px;
+	margin-top: 5%;
+}
+
+.loginbox h1 {
+	background: red none repeat scroll 0 0;
+	color: #fff;
+	margin-bottom: 18px;
+	margin-top: -25px;
+	padding: 5px;
+}
+
+.loginbox .form-group {
+	float: left;
+	margin: 10px 0 !important;
+	width: 100%;
+}
+
+.loginbox .btn-primary {
+	background-color: #DD362D;
+	border-color: #DD362D;
+}
+
+header {
+	background: #DD362D;
+	padding: 15px;
+}
+
+ul {
+	margin-bottom: 0px !important;
+}
+
+nav .list-inline a {
+	color: #fff;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 12px;
+}
+
+.form-group .col-sm-12 {
+	padding: 0;
+}
+
+.homeimg.text-center img {
+	margin-top: 20px;
+	max-height: 500px;
+	max-width: 98%;
+}
+
+section {
+	background: #fefefe none repeat scroll 0 0;
+}
+
+.table thead {
+	background: #DD362D;
+}
+
+.table thead th {
+	color: #fff;
+	text-align: center;
+}
+
