@@ -1,7 +1,7 @@
-<%@ include file="header.jsp"%>
 <html>
 <head>
 <title>Registration Coaching</title>
+<%@ include file="include.jsp"%>
 <script src="${pageContext.request.contextPath}/resources/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/jquery-ui.js"></script>
 <script type="text/javascript">
@@ -70,6 +70,7 @@
   </script>
 </head>
 <body>
+	<%@ include file="header.jsp"%>
 	<div class="container">
 		<h1 align="center">Student Registration (Coaching)</h1>
 		<br>

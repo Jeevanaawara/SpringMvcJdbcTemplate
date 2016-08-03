@@ -1,10 +1,11 @@
-<%@ include file="header.jsp"%>
 <html>
 <head>
 <title>Student Progress Report</title>
+<%@ include file="include.jsp"%>
 </head>
 <body>
 
+	<%@ include file="header.jsp"%>
 	<h4>${message}</h4>
 	<div align="center" class="container">
 	<div class="loginbox">

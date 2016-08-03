@@ -1,7 +1,7 @@
-<%@ include file="header.jsp"%>
 <html>
 <head>
 <title>Daily Report</title>
+<%@ include file="include.jsp"%>
 <script src="${pageContext.request.contextPath}/resources/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/jquery-ui.js"></script>
 <script>
@@ -14,6 +14,7 @@
 </script>
 </head>
 <body>
+	<%@ include file="header.jsp"%>
 	<h4>${message}</h4>
 	<section class="Login">
 		<div align="center" class="container">

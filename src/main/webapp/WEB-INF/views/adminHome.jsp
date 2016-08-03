@@ -1,8 +1,8 @@
-<%@ include file="include.jsp"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>User Login</title>
+<%@ include file="include.jsp"%>
 <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>

@@ -1,8 +1,8 @@
-<%@ include file="header.jsp"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <html>
 <head>
 <title>Search Student</title>
+<%@ include file="include.jsp"%>
 <script type="text/javascript">
 function deleteConfirm() {
 	return confirm('Are you sure you want to delete this Student ?');
@@ -31,6 +31,7 @@ function selectSessionByClass() {
 	</script>
 </head>
 <body>
+	<%@ include file="header.jsp"%>
 	<h4>${message}</h4>
 	<section class="Login">
 		<div align="center" class="container">

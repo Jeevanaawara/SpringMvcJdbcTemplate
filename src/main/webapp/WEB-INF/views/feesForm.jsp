@@ -1,9 +1,10 @@
-<%@ include file="header.jsp"%>
 <html>
 <head>
 <title>New/Edit Fees Form</title>
+<%@ include file="include.jsp"%>
 </head>
 <body>
+	<%@ include file="header.jsp"%>
 	<div class="container" align="center">
 		<h1>New/Edit Contact</h1>
 		<form:form action="saveContact" method="post" modelAttribute="contact"
