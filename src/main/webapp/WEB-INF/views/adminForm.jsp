@@ -1,11 +1,12 @@
-<%@ include file="header.jsp"%>
 <html>
 <head>
 <title>New/Edit Admin</title>
+<%@ include file="include.jsp"%>
 </head>
 <body>
 <section class="Login">
 <h4>${message}</h4>
+	<%@ include file="header.jsp"%>
 	<div align="center" class="container">
 	<div class="loginbox">
 		<h1>New/Edit Admin</h1>

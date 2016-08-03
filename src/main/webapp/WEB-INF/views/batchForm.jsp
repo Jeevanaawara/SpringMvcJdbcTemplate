@@ -1,9 +1,10 @@
-<%@ include file="header.jsp"%>
 <html>
 <head>
 <title>New/Edit Batch Class</title>
+<%@ include file="include.jsp"%>
 </head>
 <body>
+<%@ include file="header.jsp"%>
 <section class="Login">
 	<div align="center" class="container">
 		<div class="loginbox">

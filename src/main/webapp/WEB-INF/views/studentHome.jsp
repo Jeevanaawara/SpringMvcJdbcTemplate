@@ -8,15 +8,25 @@
 </head>
 <body>
 	<%@ include file="header.jsp"%>
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li><a href="exportReport?report=${reportName}">View Report</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="printReport">Daily Report</a></li>
+					<li><a href="searchStudent">Student Search</a></li>
+					<li><a href="newEntryTest">Entry Test Registration</a></li>
+					<li><a href="newCoaching">Coaching Registration</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 	<section class="homebody">
 			<div align="right" style="background-color: #DD362D; color: white;">
-			<a href="printReport" style="color: white">Daily Report</a> &nbsp;&nbsp;
-					<a href="searchStudent" style="color: white">Student Search</a>&nbsp;&nbsp;
-					<a href="newEntryTest" style="color: white">Entry Test Registration</a>&nbsp;&nbsp;
-					<a href="newCoaching" style="color: white">Coaching Registration</a>&nbsp;&nbsp;
 		</div>
 		<h4>${message}</h4>
-			<a href="exportReport?report=${reportName}">View Report</a>
 		<div class="container">
 			<div class="homeimg text-center">
 				<img src="${pageContext.request.contextPath}/resources/img/logo.jpg" alt="logo of Torcia" />
