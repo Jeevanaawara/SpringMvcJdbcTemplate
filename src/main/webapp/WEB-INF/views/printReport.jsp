@@ -15,43 +15,40 @@
 </head>
 <body>
 	<%@ include file="header.jsp"%>
-	<h4>${message}</h4>
-	<section class="Login">
-		<div align="center" class="container">
-			<div class="loginbox">
-				<h1>Daily Report</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4>${message}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h1 class="text-center">Daily Report</h1>
 				<form:form action="generateReport" method="post"
-					modelAttribute="student" class="form-horizontal" role="form">
+					modelAttribute="student" class="" role="form">
 					<div class="form-group">
-						<div class="col-sm-12">
-							<form:input path="dateCreated" id="datepicker"
-								class="form-control" placeholder="Enter startDate" />
-						</div>
+						<form:input path="dateCreated" id="datepicker"
+							class="form-control" placeholder="Enter startDate" />
 					</div>
 					<div class="form-group">
-						<div class="col-sm-12">
-							<form:input path="enddateCreated" id="datepicker2"
-								class="form-control" placeholder="Enter endDate" />
-						</div>
+						<form:input path="enddateCreated" id="datepicker2"
+							class="form-control" placeholder="Enter endDate" />
+					</div>
+					<div class="radio-inline">
+						<form:radiobutton path="batchClass.classType" value="Coaching"
+							label="Coaching" />
+					</div>
+					<div class="radio-inline">
+						<form:radiobutton path="batchClass.classType" value="Entry Test"
+							label="Entry Test" />
 					</div>
 					<div class="form-group">
-						<div class="col-sm-12">
-							<form:radiobutton path="batchClass.classType" value="Coaching"
-								label="Coaching" />
-							<form:radiobutton path="batchClass.classType" value="Entry Test"
-								label="Entry Test" />
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-2" align="center">
-							<input type="submit" value="Print" class="btn btn-primary btn-md">
-							<a href="cancel" class="btn btn-primary btn-md">Cancel</a>
-						</div>
+						<a href="cancel" class="btn btn-default">Cancel</a>
+						<input type="submit" value="Print" class="btn btn-primary">
 					</div>
 				</form:form>
 			</div>
 		</div>
-	</section>
-
+	</div>
 </body>
 </html>

@@ -23,7 +23,7 @@
 			 
 			 {"data": "shiftId",
 				"render": function(data,type,row,meta){
-					return  "<a href='deleteShift?shiftId="+data+"'>Delete</a> / <a href='editShift?shiftId="+data+"'>Edit</a>"
+					return  "<div class='btn-group'><a class='btn btn-danger' href='deleteShift?shiftId="+data+"'><span class='fa fa-trash'></span></a><a class='btn btn-primary' href='editShift?shiftId="+data+"'><span class='fa fa-edit'></span></a></div>"
 				 }
 			 }],
 			"bFilter" : true,
@@ -39,15 +39,24 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<h1>Shift List</h1>
+				<h1 class="text-center">Shift List</h1>
 				<h4>${message}</h4>
-				<div align="right" class="control-label">
-					<ul class="list-inline">
-						<li><a href="newShift">
-						<img alt="addshift" title="Create New Shift"
-										src="${pageContext.request.contextPath}/resources/img/create.png"></a></li>
-					</ul>
-				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<a href="newShift" class="btn btn-warning pull-right">Create New Shift</a>
+<!-- 				<div align="right" class="control-label"> -->
+<!-- 					<ul class="list-inline"> -->
+<!-- 						<li><a href="newShift"> -->
+<!-- 						<img alt="addshift" title="Create New Shift" -->
+<%-- 										src="${pageContext.request.contextPath}/resources/img/create.png"></a></li> --%>
+<!-- 					</ul> -->
+<!-- 				</div> -->
+			</div>
+		</div>
+		<div class="row" style="margin-top:10px">
+			<div class="col-md-8 col-md-offset-2">
 				<table border="1" id ="shiftTbl" class="table table-striped">
 					<c:if test="${fn:length(listShift) > 0}">
 						<thead>

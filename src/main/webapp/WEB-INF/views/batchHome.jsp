@@ -13,19 +13,16 @@
 
 			"aaData" : eval('${listBatchClass}'),
 			"aoColumns" : [ {
-				"data" : "className",
-				"width" : "25%"
+				"data" : "className"
 			}, {
-				"data" : "classDesc",
-				"width" : "35%"
+				"data" : "classDesc"
 			}, {
-				"data" : "classType",
-				"width" : "30%"
+				"data" : "classType"
 			} ,
 			 
 			 {"data": "classId",
 				"render": function(data,type,row,meta){
-					return  "<a href='deleteBatchClass?classId="+data+"' onclick='javascript:deleteConfirm();'>Delete</a> / <a href='editBatchClass?classId="+data+"'>Edit</a>"
+					return  "<div class='btn-group' role='group'><a class='btn btn-danger' href='deleteBatchClass?classId="+data+"' onclick='javascript:deleteConfirm();' data-toggle='tooltip' title='delete'><span class='fa fa-trash'></span></a><a class='btn btn-primary' href='editBatchClass?classId="+data+"' data-toggle='tooltip' title='Edit'><span class='fa fa-edit'></span></a></div>"
 				 }
 			 }],
 			"bFilter" : true,
@@ -40,8 +37,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">				
-				<h1>Class List</h1>
+				<h1 class="text-center">Class List</h1>
 				<h4>${message}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
 <!-- 				<div class="control-label"> -->
 <!-- 					<ul class="list-inline"> -->
 <!-- 						<li> -->
@@ -52,9 +53,13 @@
 <!-- 						</li> -->
 <!-- 					</ul> -->
 <!-- 				</div> -->
-				<button class="btn btn-warning pull-right">
+				<a href="newBatchClass" class="btn btn-warning pull-right">
 					Create New
-				</button>
+				</a>
+			</div>
+		</div>
+		<div class="row" style="margin-top:10px">
+			<div class="col-md-8 col-md-offset-2">
 				<table border="1"  id="classTbl" class="table table-striped">
 					<c:if test="${fn:length(listBatchClass) > 0}">
 						<thead>
