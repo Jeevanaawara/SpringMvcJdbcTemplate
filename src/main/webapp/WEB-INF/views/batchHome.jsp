@@ -10,7 +10,7 @@
 	
 	$(function() {
 		$('#classTbl').DataTable({
-
+// 			"dom":"<lftipr>",
 			"aaData" : eval('${listBatchClass}'),
 			"aoColumns" : [ {
 				"data" : "className"
@@ -53,16 +53,16 @@
 <!-- 						</li> -->
 <!-- 					</ul> -->
 <!-- 				</div> -->
-				<a href="newBatchClass" class="btn btn-warning pull-right">
-					Create New
+				<a href="newBatchClass" class="btn btn-success pull-right">
+					<span class="glyphicon glyphicon-plus"></span> Create New
 				</a>
 			</div>
 		</div>
 		<div class="row" style="margin-top:10px">
 			<div class="col-md-8 col-md-offset-2">
-				<table border="1"  id="classTbl" class="table table-striped">
+				<table id="classTbl" class="table">
 					<c:if test="${fn:length(listBatchClass) > 0}">
-						<thead>
+						<thead class="bg-primary">
 							<tr>
 								<th>Class Name</th>
 								<th>Class Description</th>

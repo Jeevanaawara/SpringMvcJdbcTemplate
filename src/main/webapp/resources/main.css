@@ -1,0 +1,40 @@
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    color: #fffefe;
+    background-color: #d66100;
+}
+.navbar-default {
+    background-color: #ff8a29;
+    border-color: #ff6c02;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: #d66100;
+}
+.navbar-default .navbar-brand {
+    color: #efefef;
+}
+brand:focus, .navbar-default .navbar-brand:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+nav .btn-default {
+    color: #fefefe;
+    background-color: #ffaa00;
+    border-color: #c16500;
+}
+nav .btn-default.active,
+nav .btn-default:active,
+nav .btn-default:hover,
+nav .btn-default.focus,
+nav .btn-default:focus,
+nav .open>.dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: #ce7000;
+    border-color: #c16500;
+}

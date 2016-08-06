@@ -33,27 +33,27 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h4>${message}</h4>
-				<h1>Search Student Detail</h1>
+				<h1  class="text-center">Search Student Detail</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
 				<form:form action="searchStudentDetailList" method="post"
-					modelAttribute="student" class="form-horizontal" role="form">
+					modelAttribute="student" class="" role="form">
 					<div class="form-group">
-						<div class="col-sm-12">
-							<form:select path="classId" onclick="selectSessionByClass()"
-								class="form-control">
-								<form:option value="0" label="Select Class" />
-								<form:options items="${listBatchClass}" itemValue="classId"
-									itemLabel="className" />
-							</form:select>
-						</div>
+						<form:select path="classId" onclick="selectSessionByClass()"
+							class="form-control">
+							<form:option value="0" label="Select Class" />
+							<form:options items="${listBatchClass}" itemValue="classId"
+								itemLabel="className" />
+						</form:select>
 					</div>
 					<div class="form-group">
-						<div class="col-sm-12">
-							<form:select path="sectionId" class="form-control">
-								<form:option value="0" label="Select Session" />
-								<form:options items="${listSection}" itemValue="sectionId"
-									itemLabel="sectionName" />
-							</form:select>
-						</div>
+						<form:select path="sectionId" class="form-control">
+							<form:option value="0" label="Select Session" />
+							<form:options items="${listSection}" itemValue="sectionId"
+								itemLabel="sectionName" />
+						</form:select>
 					</div>
 					<input type="submit" value="Search" class="btn btn-primary btn-md pull-right">
 				</form:form>
@@ -61,7 +61,7 @@
 		</div>
 		<div class="row" style="margin-top:10px;">
 			<div class="col-md-8 col-md-offset-2">
-				<table border="1" class="table table-striped">
+				<table class="table table-striped table-bordered">
 					<c:if test="${fn:length(listStudent) > 0}">
 						<thead>
 							<tr>

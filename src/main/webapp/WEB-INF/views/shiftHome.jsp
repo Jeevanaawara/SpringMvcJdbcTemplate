@@ -45,7 +45,9 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<a href="newShift" class="btn btn-warning pull-right">Create New Shift</a>
+				<a href="newShift" class="btn btn-success pull-right">
+					<span class="glyphicon glyphicon-plus"></span> Create New Shift
+				</a>
 <!-- 				<div align="right" class="control-label"> -->
 <!-- 					<ul class="list-inline"> -->
 <!-- 						<li><a href="newShift"> -->
@@ -57,9 +59,9 @@
 		</div>
 		<div class="row" style="margin-top:10px">
 			<div class="col-md-8 col-md-offset-2">
-				<table border="1" id ="shiftTbl" class="table table-striped">
+				<table id ="shiftTbl" class="table table-striped">
 					<c:if test="${fn:length(listShift) > 0}">
-						<thead>
+						<thead class="bg-primary">
 							<tr>
 								<th>Shift Name</th>
 								<th>Shift Description</th>

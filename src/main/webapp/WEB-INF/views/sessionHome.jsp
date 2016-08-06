@@ -21,16 +21,16 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<a href="newSection" class="btn btn-warning pull-right">
-					Create
+				<a href="newSection" class="btn btn-success pull-right">
+					<span class="glyphicon glyphicon-plus"></span> Create
 				</a>
 			</div>
 		</div>
 		<div class="row" style="margin-top:10px">
 			<div class="col-md-12">
-				<table id="sessionTable" border="1" class="table table-striped">
+				<table id="sessionTable" class="table table-striped">
 					<c:if test="${fn:length(listSection) > 0}">
-						<thead>
+						<thead class="bg-primary">
 							<tr>
 								<th>S.No</th>
 								<th>Session Name</th>
